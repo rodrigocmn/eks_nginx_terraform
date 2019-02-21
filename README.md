@@ -73,7 +73,7 @@ Now you should have:
 - 1 AWS ALB created and configured
 - All necessary routes, security groups, roles and other resources necessary to support the solution.
 
-The only thing left to do is the DNS configuration, which was not included in this template as you may not have a domain registered in your AWS Route 53. The next section
+The only thing left to do is the DNS configuration, which was not included in this template as you may not have a domain registered in your AWS Route 53. The next section present couple options to implement it.
 
 ## DNS Configuration
 
