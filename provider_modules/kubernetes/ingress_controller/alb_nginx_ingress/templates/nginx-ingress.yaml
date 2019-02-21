@@ -1,0 +1,20 @@
+
+
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: "ingress"
+  annotations:
+    kubernetes.io/ingress.class: alb
+    alb.ingress.kubernetes.io/scheme: internet-facing
+  labels:
+    app: demoapp
+spec:
+  rules:
+    - host: ${cluster_endpoint}
+      http:
+        paths:
+          - path: /
+            backend:
+              serviceName: nginxservice
+              servicePort: 80
